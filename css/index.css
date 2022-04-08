@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section .container .row h3 {
+  margin-top: 250px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+section .container .row p {
+  margin-top: 25px;
+  color: hsl(240, 33%, 94%);
+}
+section .container .row .bttn {
+  margin-top: 120px;
+  background-color: hsl(248, 32%, 49%);
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .row .bttn h4 {
+  color: hsl(246, 25%, 77%);
+  font-size: 15px;
+}
+section .container .row .bttn h4 span {
+  color: #fff;
+}
+
+section .container .row form {
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 35px;
+}
+section .container .row form .form-group input {
+  padding: 25px 30px;
+  margin-bottom: 10px;
+}
+section .container .row form .success input {
+  border-color: #2ecc71;
+}
+section .container .row form .error input {
+  border-color: #e74c3c;
+}
+section .container .row form .form-group input:focus {
+  border: 2px solid hsl(248, 32%, 49%);
+  box-shadow: none;
+}
+section .container .row form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+section .container .row form .form-group img {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+section .container .row form .error img {
+  visibility: visible;
+}
+section .container .row form .form-group small {
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  right: 0;
+}
+section .container .row form .error small {
+  color: #e74c3c;
+  z-index: 999;
+  visibility: visible;
+}
+section .container .row form button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0 10px 0;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 4px 0px 0px hsl(154, 57%, 41%);
+  border: none;
+  font-weight: 500;
+  color: #fff;
+}
+section .container .row form button:hover {
+  opacity: 0.8;
+}
+section .container .row form .last-line {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 11px;
+  color: hsl(246, 25%, 77%);
+}
+section .container .row form .last-line span a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    background-image: url("../images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+  }
+  section .container .row h3 {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+  section .container .row p {
+    text-align: center;
+    margin: auto;
+    max-width: 310px;
+    margin-top: 20px;
+  }
+  section .container .row .bttn {
+    margin-top: 65px;
+    margin-bottom: 25px;
+    padding: 50px 0 40px 0;
+  }
+  section .container .row .bttn h4 {
+    max-width: 203px;
+    line-height: 25px;
+    text-align: center;
+  }
+  section .container .row form {
+    margin-bottom: 70px;
+  }
+}
